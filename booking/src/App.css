@@ -1,38 +1,120 @@
-.App {
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
   text-align: center;
+  margin-top: 20px;
+  color: #2c3e50;
+  /* Darker tone for the title */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  color: #7f8c8d;
+  /* Lighter gray color */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: #ffffff;
+  /* White background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Soft shadow effect */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 15px;
+}
+
+/* Styling for input fields */
+input,
+select {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ecf0f1;
+  /* Light border color */
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+  /* Soft background for input fields */
+}
+
+input:focus,
+select:focus {
+  border-color: #3498db;
+  /* Blue focus effect */
+  outline: none;
+  background-color: #e9f3fc;
+  /* Slight blue background when focused */
+}
+
+/* Styling for submit button */
+button {
+  padding: 12px 20px;
+  background-color: #1abc9c;
+  /* Soft green button color */
   color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #16a085;
+  /* Slightly darker green on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styling for reservation list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+ul li {
+  padding: 10px;
+  background-color: #ecf0f1;
+  /* Light gray background */
+  margin: 8px 0;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #34495e;
+  /* Darker text for the list items */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Soft shadow effect */
+}
+
+/* Styling for delete all button */
+button.delete {
+  background-color: #e74c3c;
+  /* Soft red color for the delete button */
+  margin-top: 20px;
+}
+
+button.delete:hover {
+  background-color: #c0392b;
+  /* Darker red on hover */
+}
+
+/* Styling for alert messages */
+.alert {
+  color: #e74c3c;
+  /* Red color for alerts */
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
 }
